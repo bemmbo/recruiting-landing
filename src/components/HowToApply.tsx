@@ -161,11 +161,6 @@ requests.post(
         valid URLs for your CV and GitHub profile.
       </Note>
 
-      <div className="not-prose">
-        <Button href="/about-us" variant="text" arrow="right">
-          <>Learn more about our team</>
-        </Button>
-      </div>
 
       <h2>What's next?</h2>
 
