@@ -10,8 +10,15 @@ import Link from 'next/link'
 
 import { GridPattern } from '@/components/GridPattern'
 import { Heading } from '@/components/Heading'
+import { BellIcon } from '@/components/icons/BellIcon'
+import { CalendarIcon } from '@/components/icons/CalendarIcon'
 import { ChatBubbleIcon } from '@/components/icons/ChatBubbleIcon'
 import { EnvelopeIcon } from '@/components/icons/EnvelopeIcon'
+import { FaceSmileIcon } from '@/components/icons/FaceSmileIcon'
+import { MapPinIcon } from '@/components/icons/MapPinIcon'
+import { PackageIcon } from '@/components/icons/PackageIcon'
+import { ShapesIcon } from '@/components/icons/ShapesIcon'
+import { TagIcon } from '@/components/icons/TagIcon'
 import { UserIcon } from '@/components/icons/UserIcon'
 import { UsersIcon } from '@/components/icons/UsersIcon'
 
@@ -138,6 +145,102 @@ const resources: Array<Resource> = [
   
 ]
 
+// Alternative perks list with updated information
+const alternativeResources: Array<Resource> = [
+  {
+    href: '/stock-options',
+    name: 'Stock options',
+    description:
+      'Equity for the first team members who deserve it.',
+    icon: TagIcon, // More appropriate for equity/ownership
+    pattern: {
+      y: 16,
+      squares: [
+        [0, 1],
+        [1, 3],
+      ],
+    },
+  },
+  {
+    href: '/5-weeks-vacation',
+    name: '5 weeks vacation',
+    description:
+      '2 extra weeks of vacation time to recharge.',
+    icon: CalendarIcon, // Perfect for vacation/time off
+    pattern: {
+      y: 32,
+      squares: [
+        [0, 2],
+        [1, 4],
+      ],
+    },
+  },
+  {
+    href: '/flexible-home-office',
+    name: 'Flexible home office',
+    description:
+      'Work from home flexibility (we\'d love to share office time initially).',
+    icon: MapPinIcon, // Good for location/remote work
+    pattern: {
+      y: 22,
+      squares: [[0, 1]],
+    },
+  },
+  {
+    href: '/office-recreation',
+    name: 'Office recreation',
+    description:
+      'Ping pong table, climbing wall, and basketball hoop in the office.',
+    icon: ShapesIcon, // Good for games/activities
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3],
+      ],
+    },
+  },
+  {
+    href: '/pet-friendly',
+    name: 'Pet friendly office',
+    description:
+      'Bring your furry friends to work with you.',
+    icon: FaceSmileIcon, // Represents happiness/friendly environment
+    pattern: {
+      y: 22,
+      squares: [[0, 1]],
+    },
+  },
+  {
+    href: '/birthday-off',
+    name: 'Birthday off',
+    description:
+      'Get your birthday as a free day to celebrate.',
+    icon: BellIcon, // Good for celebrations/notifications
+    pattern: {
+      y: 16,
+      squares: [
+        [0, 1],
+        [1, 3],
+      ],
+    },
+  },
+  {
+    href: '/office-perks',
+    name: 'Office perks',
+    description:
+      'Free coffee, fresh fruit, and snacks available daily.',
+    icon: PackageIcon, // Perfect for perks/benefits package
+    pattern: {
+      y: 32,
+      squares: [
+        [0, 2],
+        [1, 4],
+      ],
+    },
+  },
+]
+
 function ResourceIcon({ icon: Icon }: { icon: Resource['icon'] }) {
   return (
     <div className="flex h-7 w-7 items-center justify-center rounded-full bg-zinc-900/5 ring-1 ring-zinc-900/25 backdrop-blur-[2px] transition duration-300 group-hover:bg-white/50 group-hover:ring-zinc-900/25 dark:bg-white/7.5 dark:ring-white/15 dark:group-hover:bg-[#75ACFF]/10 dark:group-hover:ring-[#75ACFF]/40">
@@ -227,13 +330,16 @@ function Resource({ resource }: { resource: Resource }) {
 }
 
 export function Perks() {
+  // Switch between 'resources' (original) and 'alternativeResources' (new)
+  const currentResources = alternativeResources // Change to 'resources' to use original list
+  
   return (
     <div className="my-16 xl:max-w-none">
       <Heading level={2} id="perks">
         Perks
       </Heading>
       <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 sm:grid-cols-2 xl:grid-cols-4 dark:border-white/5">
-        {resources.map((resource) => (
+        {currentResources.map((resource) => (
           <Resource key={resource.href} resource={resource} />
         ))}
       </div>
