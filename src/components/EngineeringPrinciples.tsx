@@ -43,17 +43,26 @@ export function EngineeringPrinciples() {
       <p className="text-sm text-zinc-600 dark:text-zinc-400">
         Estos principios son los que guían cómo trabajamos en Bemmbo.
       </p>
-      <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 sm:grid-cols-2 xl:grid-cols-4 dark:border-white/5">
-        {engineering_principles.map((guide) => (
-          <div key={guide.href}>
-            <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">
-              {guide.name}
-            </h3>
-            <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
-              {guide.description}
-            </p>
-          </div>
-        ))}
+      <div className="not-prose mt-4 border-t border-zinc-900/5 pt-10 dark:border-white/5">
+        <ul className="space-y-8">
+          {engineering_principles.map((guide, index) => (
+            <li key={guide.href} className="flex">
+              <div className="flex-shrink-0">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-zinc-100 text-sm font-semibold text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
+                  {index + 1}
+                </span>
+              </div>
+              <div className="ml-4">
+                <h3 className="text-base font-semibold text-zinc-900 dark:text-white">
+                  {guide.name}
+                </h3>
+                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                  {guide.description}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   )
