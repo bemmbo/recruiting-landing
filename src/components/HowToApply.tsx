@@ -21,8 +21,8 @@ export function HowToApply() {
       <ol>
         <li>Submit your application using our API endpoints</li>
         <li>Short interview with founders to ensure alignment</li>
-        <li>Technical interview with a team member (live coding of a simple problem)</li>
         <li>Frontend task review - simulating a real Bemmbo feature delivery</li>
+        <li>Technical interview with a team member (live coding of a simple problem)</li>
         <li>Coffee chat at our office for cultural fit ☕</li>
       </ol>
 

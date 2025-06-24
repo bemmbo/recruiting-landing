@@ -19,7 +19,7 @@ const role_responsibilities = [
   },
   {
     name: 'Infrastructure as Code',
-    description: 'Implement and maintain infrastructure using tools like Terraform, Docker, and cloud services.',
+    description: 'Implement and maintain infrastructure using tools like AWS CDK, Docker, and cloud services.',
   },
   {
     name: 'Systems Architecture',
