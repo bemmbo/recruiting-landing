@@ -1,0 +1,59 @@
+import { EngineeringPrinciples } from '@/components/EngineeringPrinciples'
+import { RoleResponsibilities } from '@/components/RoleResponsibilities'
+import { Perks } from '@/components/Perks'
+import { HeroPattern } from '@/components/HeroPattern'
+import { Stack } from '@/components/Stack'
+import { HowToApply } from '@/components/HowToApply'
+
+export const metadata = {
+  title: 'Bemmbo is looking for devs',
+  description: '',
+}
+
+export const sections = [
+  { title: 'Engineering Principles', id: 'engineering_principles' },
+  { title: 'Role Responsibilities', id: 'responsibilities' },
+  { title: 'Perks', id: 'Perks' },
+  { title: 'How to apply', id: 'how-to-apply' },
+]
+
+<HeroPattern />
+<div className="pt-12" />
+
+# Looking for devs
+
+Bemmbo is a purpose-built tool for finance teams. We're the technical backbone that powers the finance of Latin America's most innovative companies.
+
+Our platform automates complex payment flows and collections, allowing companies to focus in what really matters in their business. For instance, Wild Lama on creating amazing fashion, Buk to create more happy places to work, and Fintual to make investing accessible to everyone.
+
+We're looking for developers who want to tackle complex technical challenges in the fintech space. From building robust payment processing systems to developing scalable infrastructure, you'll be working on technology that directly impacts thousands of users across Latin America.
+
+<div className="not-prose mt-6 mb-16 flex gap-3">
+  <Button href="#how-to-apply" arrow="right">
+    <>Apply</>
+  </Button>
+  <Button href="https://bemmbo.com" variant="outline">
+    <>Learn more</>
+  </Button>
+</div>
+
+## Getting started {{ anchor: false }}
+
+Before diving into the application process, we recommend taking some time to understand what makes Bemmbo your match. Learn about our engineering culture and principles that guide how we build products, explore the specific responsibilities and growth opportunities in the role you're interested in, discover the perks and benefits we offer to support your career and well-being, and understand our application process and what to expect during each step of your journey with us. {{ className: 'lead' }}
+
+<div className="not-prose">
+  <Button href="https://bemmbo.com/jobs" variant="text" arrow="right">
+    <>Explore our culture</>
+  </Button>
+</div>
+
+<EngineeringPrinciples />
+
+<RoleResponsibilities />
+
+<Stack />
+
+<Perks />
+
+<HowToApply />
+
