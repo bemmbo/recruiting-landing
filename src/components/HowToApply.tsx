@@ -32,29 +32,29 @@ export function HowToApply() {
         Para iniciar tu proceso de postulación, necesitarás hacer dos llamadas a la API. Primero, obtén tu token de pregunta, luego envía tu postulación. Aquí te mostramos cómo hacerlo usando diferentes métodos:
       </p>
 
-      <CodeGroup title="Obtén tu pregunta de postulación" tag="GET" label="recruiting.api.bemmbo.com/start">
+      <CodeGroup title="Obtén tu pregunta de postulación" tag="GET" label="recruiting.data.bemmbo.com/start">
         <Pre title="cURL" code={`# Obtén tu pregunta de postulación
-curl -X GET https://recruiting.api.bemmbo.com/start`}>
+curl -X GET https://recruiting.data.bemmbo.com/start`}>
           {`# Obtén tu pregunta de postulación
-curl -X GET https://recruiting.api.bemmbo.com/start`}
+curl -X GET https://recruiting.data.bemmbo.com/start`}
         </Pre>
         <Pre title="JavaScript" code={`// Obtén tu pregunta de postulación
-fetch('https://recruiting.api.bemmbo.com/start', {
+fetch('https://recruiting.data.bemmbo.com/start', {
   method: 'GET'
 })`}>
           {`// Obtén tu pregunta de postulación
-fetch('https://recruiting.api.bemmbo.com/start', {
+fetch('https://recruiting.data.bemmbo.com/start', {
   method: 'GET'
 })`}
         </Pre>
         <Pre title="Python" code={`# Obtén tu pregunta de postulación
 import requests
 
-response = requests.get('https://recruiting.api.bemmbo.com/start')`}>
+response = requests.get('https://recruiting.data.bemmbo.com/start')`}>
           {`# Obtén tu pregunta de postulación
 import requests
 
-response = requests.get('https://recruiting.api.bemmbo.com/start')`}
+response = requests.get('https://recruiting.data.bemmbo.com/start')`}
         </Pre>
       </CodeGroup>
 
@@ -62,8 +62,8 @@ response = requests.get('https://recruiting.api.bemmbo.com/start')`}
         Una vez que tengas tu pregunta y respuesta, envía tu postulación con tu información personal:
       </p>
 
-      <CodeGroup title="Envía tu postulación" tag="POST" label="recruiting.api.bemmbo.com/apply">
-        <Pre title="cURL" code={`curl -X POST https://recruiting.api.bemmbo.com/apply \\
+      <CodeGroup title="Envía tu postulación" tag="POST" label="recruiting.data.bemmbo.com/apply">
+        <Pre title="cURL" code={`curl -X POST https://recruiting.data.bemmbo.com/apply \\
   -H "Content-Type: application/json" \\
   -d '{
     "token": "tu_respuesta_aqui",
@@ -74,7 +74,7 @@ response = requests.get('https://recruiting.api.bemmbo.com/start')`}
     "githubURL": "https://github.com/erlichbachman",
     "linkedinURL": "https://linkedin.com/erlichbachman"
   }'`}>
-          {`curl -X POST https://recruiting.api.bemmbo.com/apply \\
+          {`curl -X POST https://recruiting.data.bemmbo.com/apply \\
   -H "Content-Type: application/json" \\
   -d '{
     "token": "tu_respuesta_aqui",
@@ -87,7 +87,7 @@ response = requests.get('https://recruiting.api.bemmbo.com/start')`}
   }'`}
         </Pre>
         <Pre title="JavaScript" code={`// Envía tu postulación
-fetch('https://recruiting.api.bemmbo.com/apply', {
+fetch('https://recruiting.data.bemmbo.com/apply', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -103,7 +103,7 @@ fetch('https://recruiting.api.bemmbo.com/apply', {
   })
 })`}>
           {`// Envía tu postulación
-fetch('https://recruiting.api.bemmbo.com/apply', {
+fetch('https://recruiting.data.bemmbo.com/apply', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -133,7 +133,7 @@ application_data = {
 }
 
 requests.post(
-    'https://recruiting.api.bemmbo.com/apply',
+    'https://recruiting.data.bemmbo.com/apply',
     json=application_data
 )`}>
           {`# Envía tu postulación
@@ -150,7 +150,7 @@ application_data = {
 }
 
 requests.post(
-    'https://recruiting.api.bemmbo.com/apply',
+    'https://recruiting.data.bemmbo.com/apply',
     json=application_data
 )`}
         </Pre>
