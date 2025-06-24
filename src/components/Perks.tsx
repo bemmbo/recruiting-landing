@@ -36,9 +36,9 @@ interface Resource {
 const resources: Array<Resource> = [
   {
     href: '/stock-options',
-    name: 'Stock options',
+    name: 'Opciones de acciones',
     description:
-      'We offer stock options to all our employees.',
+      'Ofrecemos opciones de acciones a todos nuestros empleados.',
     icon: UserIcon,
     pattern: {
       y: 16,
@@ -50,9 +50,9 @@ const resources: Array<Resource> = [
   },
   {
     href: '/health-insurance',
-    name: 'Health insurance',
+    name: 'Seguro de salud',
     description:
-      'We offer health insurance to all our employees.',
+      'Ofrecemos seguro de salud a todos nuestros empleados.',
     icon: ChatBubbleIcon,
     pattern: {
       y: -6,
@@ -64,9 +64,9 @@ const resources: Array<Resource> = [
   },
   {
     href: '/no-limit-vacations',
-    name: 'No limit vacations',
+    name: 'Vacaciones sin límite',
     description:
-      'We offer no limit vacations to all our employees.',
+      'Ofrecemos vacaciones sin límite a todos nuestros empleados.',
     icon: EnvelopeIcon,
     pattern: {
       y: 32,
@@ -78,9 +78,9 @@ const resources: Array<Resource> = [
   },
   {
     href: '/remote-work',
-    name: 'Remote work',
+    name: 'Trabajo remoto',
     description:
-      'We offer remote work to all our employees.',
+      'Ofrecemos trabajo remoto a todos nuestros empleados.',
     icon: UsersIcon,
     pattern: {
       y: 22,
@@ -89,9 +89,9 @@ const resources: Array<Resource> = [
   },
   {
     href: '/flexible-hours',
-    name: 'Flexible hours',
+    name: 'Horarios flexibles',
     description:
-      'We offer flexible hours to all our employees.',
+      'Ofrecemos horarios flexibles a todos nuestros empleados.',
     icon: UsersIcon,
     pattern: {
       y: 22,
@@ -100,9 +100,9 @@ const resources: Array<Resource> = [
   },
   {
     href: '/5-weeks-post-parental-leave',
-    name: '5 weeks post parental leave',
+    name: '5 semanas de licencia post parental',
     description:
-      'We offer 5 weeks post parental leave to all our employees.',
+      'Ofrecemos 5 semanas de licencia post parental a todos nuestros empleados.',
     icon: UsersIcon,
     pattern: {
       y: 22,
@@ -111,9 +111,9 @@ const resources: Array<Resource> = [
   },
   {
     href: '/exchange-program',
-    name: 'Exchange program',
+    name: 'Programa de intercambio',
     description:
-      'We offer an opportunity to travel to other countries where we have offices.',
+      'Ofrecemos la oportunidad de viajar a otros países donde tenemos oficinas.',
     icon: UsersIcon,
     pattern: {
       y: 22,
@@ -122,9 +122,9 @@ const resources: Array<Resource> = [
   },
   {
     href: '/gym-membership',
-    name: 'Gym membership',
+    name: 'Membresía de gimnasio',
     description:
-      'We offer points to all our employees to use in a gym of their choice.',
+      'Ofrecemos puntos a todos nuestros empleados para usar en el gimnasio de su elección.',
     icon: UsersIcon,
     pattern: {
       y: 22,
@@ -133,9 +133,9 @@ const resources: Array<Resource> = [
   },
   {
     href: '/mental-health-support',
-    name: 'Mental health support',
+    name: 'Apoyo de salud mental',
     description:
-      'We offer points to all our employees to use in mental health support.',
+      'Ofrecemos puntos a todos nuestros empleados para usar en apoyo de salud mental.',
     icon: UsersIcon,
     pattern: {
       y: 22,
@@ -149,9 +149,9 @@ const resources: Array<Resource> = [
 const alternativeResources: Array<Resource> = [
   {
     href: '/stock-options',
-    name: 'Stock options',
+    name: 'Opciones de acciones',
     description:
-      'Equity for the first team members who deserve it.',
+      'Equity para los primeros miembros del equipo que se lo merecen.',
     icon: TagIcon, // More appropriate for equity/ownership
     pattern: {
       y: 16,
@@ -163,9 +163,9 @@ const alternativeResources: Array<Resource> = [
   },
   {
     href: '/5-weeks-vacation',
-    name: '5 weeks vacation',
+    name: '5 semanas de vacaciones',
     description:
-      '2 extra weeks of vacation time to recharge.',
+      '2 semanas extra de vacaciones para recargar energías.',
     icon: CalendarIcon, // Perfect for vacation/time off
     pattern: {
       y: 32,
@@ -177,9 +177,9 @@ const alternativeResources: Array<Resource> = [
   },
   {
     href: '/flexible-home-office',
-    name: 'Flexible home office',
+    name: 'Home office flexible',
     description:
-      'Work from home flexibility (we\'d love to share office time initially).',
+      'Flexibilidad para trabajar desde casa (nos encantaría compartir tiempo de oficina inicialmente).',
     icon: MapPinIcon, // Good for location/remote work
     pattern: {
       y: 22,
@@ -188,9 +188,9 @@ const alternativeResources: Array<Resource> = [
   },
   {
     href: '/office-recreation',
-    name: 'Office recreation',
+    name: 'Recreación en oficina',
     description:
-      'Ping pong table, climbing wall, and basketball hoop in the office.',
+      'Mesa de ping pong, muro de escalada y canasta de básquet en la oficina.',
     icon: ShapesIcon, // Good for games/activities
     pattern: {
       y: -6,
@@ -202,9 +202,9 @@ const alternativeResources: Array<Resource> = [
   },
   {
     href: '/pet-friendly',
-    name: 'Pet friendly office',
+    name: 'Oficina pet friendly',
     description:
-      'Bring your furry friends to work with you.',
+      'Trae a tus amigos peludos a trabajar contigo.',
     icon: FaceSmileIcon, // Represents happiness/friendly environment
     pattern: {
       y: 22,
@@ -213,9 +213,9 @@ const alternativeResources: Array<Resource> = [
   },
   {
     href: '/birthday-off',
-    name: 'Birthday off',
+    name: 'Día libre de cumpleaños',
     description:
-      'Get your birthday as a free day to celebrate.',
+      'Tienes tu cumpleaños como día libre para celebrar.',
     icon: BellIcon, // Good for celebrations/notifications
     pattern: {
       y: 16,
@@ -227,9 +227,9 @@ const alternativeResources: Array<Resource> = [
   },
   {
     href: '/office-perks',
-    name: 'Office perks',
+    name: 'Beneficios de oficina',
     description:
-      'Free coffee, fresh fruit, and snacks available daily.',
+      'Café gratis, fruta fresca y snacks disponibles todos los días.',
     icon: PackageIcon, // Perfect for perks/benefits package
     pattern: {
       y: 32,
@@ -336,7 +336,7 @@ export function Perks() {
   return (
     <div className="my-16 xl:max-w-none">
       <Heading level={2} id="perks">
-        Perks
+        Beneficios
       </Heading>
       <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 sm:grid-cols-2 xl:grid-cols-4 dark:border-white/5">
         {currentResources.map((resource) => (

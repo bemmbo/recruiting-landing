@@ -5,53 +5,53 @@ import { Note } from '@/components/mdx'
 export function HowToApply() {
   return (
     <div id="how-to-apply">
-      <h1>How to apply</h1>
+      <h1>Cómo postular</h1>
       
       <p className="lead">
-        This guide will walk you through the application process at Bemmbo. We'll cover how to start your application and what to expect during the interview process. Our goal is to make the process as transparent and straightforward as possible.
+        Esta guía te llevará a través del proceso de postulación en Bemmbo. Cubriremos cómo iniciar tu postulación y qué esperar durante el proceso de entrevistas. Nuestro objetivo es hacer el proceso lo más transparente y directo posible.
       </p>
 
       <Note>
-        The application process consists of several steps, from an initial chat with founders
-        to a final coffee meeting at our office. Each step helps us ensure we're a great match!
+        El proceso de postulación consiste en varios pasos, desde una charla inicial con los fundadores
+        hasta una reunión final de café en nuestra oficina. ¡Cada paso nos ayuda a asegurar que somos un gran match!
       </Note>
 
-      <h2>Application steps</h2>
+      <h2>Pasos de la postulación</h2>
 
       <ol>
-        <li>Submit your application using our API endpoints</li>
-        <li>Short interview with founders to ensure alignment</li>
-        <li>Frontend task review - simulating a real Bemmbo feature delivery</li>
-        <li>Technical interview with a team member (live coding of a simple problem)</li>
-        <li>Coffee chat at our office for cultural fit ☕</li>
+        <li>Envía tu postulación usando nuestros endpoints de API</li>
+        <li>Entrevista corta con fundadores para asegurar alineación</li>
+        <li>Revisión de tarea frontend - simulando una entrega real de feature de Bemmbo</li>
+        <li>Entrevista técnica con un miembro del equipo (live coding de un problema simple)</li>
+        <li>Charla de café en nuestra oficina para fit cultural ☕</li>
       </ol>
 
-      <h2>Making your application request</h2>
+      <h2>Haciendo tu request de postulación</h2>
 
       <p>
-        To start your application process, you'll need to make two API calls. First, get your question token, then submit your application. Here's how to do it using different methods:
+        Para iniciar tu proceso de postulación, necesitarás hacer dos llamadas a la API. Primero, obtén tu token de pregunta, luego envía tu postulación. Aquí te mostramos cómo hacerlo usando diferentes métodos:
       </p>
 
-      <CodeGroup title="Get your application question" tag="GET" label="recruiting.api.bemmbo.com/start">
-        <Pre title="cURL" code={`# Get your application question
+      <CodeGroup title="Obtén tu pregunta de postulación" tag="GET" label="recruiting.api.bemmbo.com/start">
+        <Pre title="cURL" code={`# Obtén tu pregunta de postulación
 curl -X GET https://recruiting.api.bemmbo.com/start`}>
-          {`# Get your application question
+          {`# Obtén tu pregunta de postulación
 curl -X GET https://recruiting.api.bemmbo.com/start`}
         </Pre>
-        <Pre title="JavaScript" code={`// Get your application question
+        <Pre title="JavaScript" code={`// Obtén tu pregunta de postulación
 fetch('https://recruiting.api.bemmbo.com/start', {
   method: 'GET'
 })`}>
-          {`// Get your application question
+          {`// Obtén tu pregunta de postulación
 fetch('https://recruiting.api.bemmbo.com/start', {
   method: 'GET'
 })`}
         </Pre>
-        <Pre title="Python" code={`# Get your application question
+        <Pre title="Python" code={`# Obtén tu pregunta de postulación
 import requests
 
 response = requests.get('https://recruiting.api.bemmbo.com/start')`}>
-          {`# Get your application question
+          {`# Obtén tu pregunta de postulación
 import requests
 
 response = requests.get('https://recruiting.api.bemmbo.com/start')`}
@@ -59,14 +59,14 @@ response = requests.get('https://recruiting.api.bemmbo.com/start')`}
       </CodeGroup>
 
       <p>
-        Once you have your question and answer, submit your application with your personal information:
+        Una vez que tengas tu pregunta y respuesta, envía tu postulación con tu información personal:
       </p>
 
-      <CodeGroup title="Submit your application" tag="POST" label="recruiting.api.bemmbo.com/apply">
+      <CodeGroup title="Envía tu postulación" tag="POST" label="recruiting.api.bemmbo.com/apply">
         <Pre title="cURL" code={`curl -X POST https://recruiting.api.bemmbo.com/apply \\
   -H "Content-Type: application/json" \\
   -d '{
-    "token": "your_answer_here",
+    "token": "tu_respuesta_aqui",
     "name": "Erlich Bachman",
     "phoneNumber": "+56912341234",
     "email": "erlich@bachman.com",
@@ -77,7 +77,7 @@ response = requests.get('https://recruiting.api.bemmbo.com/start')`}
           {`curl -X POST https://recruiting.api.bemmbo.com/apply \\
   -H "Content-Type: application/json" \\
   -d '{
-    "token": "your_answer_here",
+    "token": "tu_respuesta_aqui",
     "name": "Erlich Bachman",
     "phoneNumber": "+56912341234",
     "email": "erlich@bachman.com",
@@ -86,67 +86,67 @@ response = requests.get('https://recruiting.api.bemmbo.com/start')`}
     "linkedinURL": "https://linkedin.com/erlichbachman"
   }'`}
         </Pre>
-        <Pre title="JavaScript" code={`// Submit your application
+        <Pre title="JavaScript" code={`// Envía tu postulación
 fetch('https://recruiting.api.bemmbo.com/apply', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
   },
   body: JSON.stringify({
-    token: 'your_answer_here',
+    token: 'tu_respuesta_aqui',
     name: 'Erlich Bachman',
     phoneNumber: '+56912341234',
     email: 'erlich@bachman.com',
     cvURL: 'https://some-url.com/cv-erlichbachman',
     githubURL: 'https://github.com/erlichbachman',
-    linkedinURL: 'https://linkedin.com/erlichbachman' // optional
+    linkedinURL: 'https://linkedin.com/erlichbachman' // opcional
   })
 })`}>
-          {`// Submit your application
+          {`// Envía tu postulación
 fetch('https://recruiting.api.bemmbo.com/apply', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
   },
   body: JSON.stringify({
-    token: 'your_answer_here',
+    token: 'tu_respuesta_aqui',
     name: 'Erlich Bachman',
     phoneNumber: '+56912341234',
     email: 'erlich@bachman.com',
     cvURL: 'https://some-url.com/cv-erlichbachman',
     githubURL: 'https://github.com/erlichbachman',
-    linkedinURL: 'https://linkedin.com/erlichbachman' // optional
+    linkedinURL: 'https://linkedin.com/erlichbachman' // opcional
   })
 })`}
         </Pre>
-        <Pre title="Python" code={`# Submit your application
+        <Pre title="Python" code={`# Envía tu postulación
 import requests
 
 application_data = {
-    'token': 'your_answer_here',
+    'token': 'tu_respuesta_aqui',
     'name': 'Erlich Bachman',
     'phoneNumber': '+56912341234',
     'email': 'erlich@bachman.com',
     'cvURL': 'https://some-url.com/cv-erlichbachman',
     'githubURL': 'https://github.com/erlichbachman',
-    'linkedinURL': 'https://linkedin.com/erlichbachman'  # optional
+    'linkedinURL': 'https://linkedin.com/erlichbachman'  # opcional
 }
 
 requests.post(
     'https://recruiting.api.bemmbo.com/apply',
     json=application_data
 )`}>
-          {`# Submit your application
+          {`# Envía tu postulación
 import requests
 
 application_data = {
-    'token': 'your_answer_here',
+    'token': 'tu_respuesta_aqui',
     'name': 'Erlich Bachman',
     'phoneNumber': '+56912341234',
     'email': 'erlich@bachman.com',
     'cvURL': 'https://some-url.com/cv-erlichbachman',
     'githubURL': 'https://github.com/erlichbachman',
-    'linkedinURL': 'https://linkedin.com/erlichbachman'  # optional
+    'linkedinURL': 'https://linkedin.com/erlichbachman'  # opcional
 }
 
 requests.post(
@@ -157,21 +157,21 @@ requests.post(
       </CodeGroup>
 
       <Note>
-        All fields are required except for `linkedinURL` which is optional. Make sure to include
-        valid URLs for your CV and GitHub profile.
+        Todos los campos son requeridos excepto `linkedinURL` que es opcional. Asegúrate de incluir
+        URLs válidas para tu CV y perfil de GitHub.
       </Note>
 
 
-      <h2>What's next?</h2>
+      <h2>¿Qué sigue?</h2>
 
-      <p>After submitting your application, here's what you can expect:</p>
+      <p>Después de enviar tu postulación, esto es lo que puedes esperar:</p>
 
       <ul>
-        <li>We'll review your application and get back to you shortly</li>
-        <li>If there's a potential match, we'll schedule the founder interview</li>
-        <li>Frontend task will be assigned with clear requirements</li>
-        <li>Technical interview will focus on practical programming skills</li>
-        <li>Final coffee chat to meet the team and discuss next steps</li>
+        <li>Revisaremos tu postulación y te responderemos pronto</li>
+        <li>Si hay un match potencial, programaremos la entrevista con fundadores</li>
+        <li>Se asignará la tarea frontend con requerimientos claros</li>
+        <li>La entrevista técnica se enfocará en habilidades prácticas de programación</li>
+        <li>Charla final de café para conocer al equipo y discutir próximos pasos</li>
       </ul>
     </div>
   )
