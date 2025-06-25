@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     default: 'Bemmbo está buscando Software Engineers',
   },
   description: 'Automatizando las finanzas de las empresas.',
+  metadataBase: new URL('https://jobs.bemmbo.com'),
   openGraph: {
     title: 'Bemmbo está buscando Software Engineers',
     description: 'Automatizando las finanzas de las empresas.',
@@ -24,7 +25,8 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bemmbo está buscando Software Engineers',
+        alt: 'Bemmbo está buscando Software Engineers - Únete a la columna vertebral técnica que impulsa las finanzas de Latinoamérica',
+        type: 'image/png',
       },
     ],
   },
@@ -33,6 +35,7 @@ export const metadata: Metadata = {
     title: 'Bemmbo está buscando Software Engineers',
     description: 'Automatizando las finanzas de las empresas.',
     images: ['/og-image.png'],
+    creator: '@bemmbo',
   },
 }
 
