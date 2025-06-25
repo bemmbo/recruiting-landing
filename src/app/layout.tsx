@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     template: '%s - Bemmbo Recruiting',
     default: 'Bemmbo está buscando Software Engineers',
   },
-  description: 'Únete a la columna vertebral técnica que impulsa las finanzas de las empresas más innovadoras de Latinoamérica. Construye sistemas robustos de procesamiento de pagos e infraestructura escalable.',
+  description: 'Automatizando las finanzas de las empresas.',
   openGraph: {
     title: 'Bemmbo está buscando Software Engineers',
-    description: 'Únete a la columna vertebral técnica que impulsa las finanzas de las empresas más innovadoras de Latinoamérica.',
+    description: 'Automatizando las finanzas de las empresas.',
     type: 'website',
     url: 'https://jobs.bemmbo.com',
     siteName: 'Bemmbo Careers',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Bemmbo está buscando Software Engineers',
-    description: 'Únete a la columna vertebral técnica que impulsa las finanzas de las empresas más innovadoras de Latinoamérica.',
+    description: 'Automatizando las finanzas de las empresas.',
     images: ['/og-image.png'],
   },
 }
