@@ -9,8 +9,30 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Protocol API Reference',
-    default: 'Protocol API Reference',
+    template: '%s - Bemmbo Recruiting',
+    default: 'Bemmbo está buscando Software Engineers',
+  },
+  description: 'Únete a la columna vertebral técnica que impulsa las finanzas de las empresas más innovadoras de Latinoamérica. Construye sistemas robustos de procesamiento de pagos e infraestructura escalable.',
+  openGraph: {
+    title: 'Bemmbo está buscando Software Engineers',
+    description: 'Únete a la columna vertebral técnica que impulsa las finanzas de las empresas más innovadoras de Latinoamérica.',
+    type: 'website',
+    url: 'https://jobs.bemmbo.com',
+    siteName: 'Bemmbo Careers',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bemmbo está buscando Software Engineers',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Bemmbo está buscando Software Engineers',
+    description: 'Únete a la columna vertebral técnica que impulsa las finanzas de las empresas más innovadoras de Latinoamérica.',
+    images: ['/og-image.png'],
   },
 }
 
