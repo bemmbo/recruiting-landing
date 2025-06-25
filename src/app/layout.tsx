@@ -13,19 +13,19 @@ export const metadata: Metadata = {
     default: 'Bemmbo está buscando Software Engineers',
   },
   description: 'Automatizando las finanzas de las empresas.',
-  metadataBase: new URL('https://jobs.bemmbo.com'),
+  metadataBase: new URL('https://looking-for-devs.bemmbo.com'),
   openGraph: {
     title: 'Bemmbo está buscando Software Engineers',
     description: 'Automatizando las finanzas de las empresas.',
     type: 'website',
-    url: 'https://jobs.bemmbo.com',
+    url: 'https://looking-for-devs.bemmbo.com',
     siteName: 'Bemmbo Careers',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://looking-for-devs.bemmbo.com/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bemmbo está buscando Software Engineers - Únete a la columna vertebral técnica que impulsa las finanzas de Latinoamérica',
+        alt: 'Bemmbo está buscando Software Engineers',
         type: 'image/png',
       },
     ],
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Bemmbo está buscando Software Engineers',
     description: 'Automatizando las finanzas de las empresas.',
-    images: ['/og-image.png'],
+    images: ['https://looking-for-devs.bemmbo.com/og-image.png'],
     creator: '@bemmbo',
   },
 }
@@ -55,6 +55,13 @@ export default async function RootLayout({
 
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
+      <head>
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta name="twitter:image:width" content="1200" />
+        <meta name="twitter:image:height" content="630" />
+      </head>
       <body className="flex min-h-full bg-white antialiased dark:bg-zinc-900">
         <Providers>
           <div className="w-full">
