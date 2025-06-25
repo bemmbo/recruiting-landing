@@ -13,7 +13,7 @@ export function HowToApply() {
 
       <Note>
         El proceso de postulación consiste en varios pasos, desde una charla inicial con los fundadores
-        hasta una reunión final de café en nuestra oficina. ¡Cada paso nos ayuda a asegurar que somos un gran match!
+        hasta una reunión final de café en nuestra oficina.
       </Note>
 
       <h2>Pasos de la postulación</h2>
@@ -167,11 +167,11 @@ requests.post(
       <p>Después de enviar tu postulación, esto es lo que puedes esperar:</p>
 
       <ul>
-        <li>Revisaremos tu postulación y te responderemos pronto</li>
-        <li>Si hay un match potencial, programaremos la entrevista con fundadores</li>
-        <li>Se asignará la tarea frontend con requerimientos claros</li>
-        <li>La entrevista técnica se enfocará en habilidades prácticas de programación</li>
-        <li>Charla final de café para conocer al equipo y discutir próximos pasos</li>
+        <li>Revisaremos tu postulación y te responderemos lo antes posible</li>
+        <li>Si hay un potencial match, programaremos una entrevista con los founders</li>
+        <li>Se asignará una tarea de frontend de forma remota con los requerimientos claros</li>
+        <li>Se realizará una prueba de programación en vivo con algunos de nuestros ingenieros</li>
+        <li>Un café para conocer al equipo y evaluar el fit cultural</li>
       </ul>
     </div>
   )

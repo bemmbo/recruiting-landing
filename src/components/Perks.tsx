@@ -6,7 +6,6 @@ import {
   useMotionValue,
   type MotionValue,
 } from 'framer-motion'
-import Link from 'next/link'
 
 import { GridPattern } from '@/components/GridPattern'
 import { Heading } from '@/components/Heading'
@@ -23,7 +22,6 @@ import { UserIcon } from '@/components/icons/UserIcon'
 import { UsersIcon } from '@/components/icons/UsersIcon'
 
 interface Resource {
-  href: string
   name: string
   description: string
   icon: React.ComponentType<{ className?: string }>
@@ -35,7 +33,6 @@ interface Resource {
 
 const resources: Array<Resource> = [
   {
-    href: '/stock-options',
     name: 'Opciones de acciones',
     description:
       'Ofrecemos opciones de acciones a todos nuestros empleados.',
@@ -49,7 +46,6 @@ const resources: Array<Resource> = [
     },
   },
   {
-    href: '/health-insurance',
     name: 'Seguro de salud',
     description:
       'Ofrecemos seguro de salud a todos nuestros empleados.',
@@ -63,7 +59,6 @@ const resources: Array<Resource> = [
     },
   },
   {
-    href: '/no-limit-vacations',
     name: 'Vacaciones sin límite',
     description:
       'Ofrecemos vacaciones sin límite a todos nuestros empleados.',
@@ -77,7 +72,6 @@ const resources: Array<Resource> = [
     },
   },
   {
-    href: '/remote-work',
     name: 'Trabajo remoto',
     description:
       'Ofrecemos trabajo remoto a todos nuestros empleados.',
@@ -88,7 +82,6 @@ const resources: Array<Resource> = [
     },
   },
   {
-    href: '/flexible-hours',
     name: 'Horarios flexibles',
     description:
       'Ofrecemos horarios flexibles a todos nuestros empleados.',
@@ -99,7 +92,6 @@ const resources: Array<Resource> = [
     },
   },
   {
-    href: '/5-weeks-post-parental-leave',
     name: '5 semanas de licencia post parental',
     description:
       'Ofrecemos 5 semanas de licencia post parental a todos nuestros empleados.',
@@ -110,7 +102,6 @@ const resources: Array<Resource> = [
     },
   },
   {
-    href: '/exchange-program',
     name: 'Programa de intercambio',
     description:
       'Ofrecemos la oportunidad de viajar a otros países donde tenemos oficinas.',
@@ -121,7 +112,6 @@ const resources: Array<Resource> = [
     },
   },
   {
-    href: '/gym-membership',
     name: 'Membresía de gimnasio',
     description:
       'Ofrecemos puntos a todos nuestros empleados para usar en el gimnasio de su elección.',
@@ -132,7 +122,6 @@ const resources: Array<Resource> = [
     },
   },
   {
-    href: '/mental-health-support',
     name: 'Apoyo de salud mental',
     description:
       'Ofrecemos puntos a todos nuestros empleados para usar en apoyo de salud mental.',
@@ -148,8 +137,7 @@ const resources: Array<Resource> = [
 // Alternative perks list with updated information
 const alternativeResources: Array<Resource> = [
   {
-    href: '/stock-options',
-    name: 'Opciones de acciones',
+    name: 'Stock options',
     description:
       'Equity para los primeros miembros del equipo que se lo merecen.',
     icon: TagIcon, // More appropriate for equity/ownership
@@ -162,7 +150,6 @@ const alternativeResources: Array<Resource> = [
     },
   },
   {
-    href: '/5-weeks-vacation',
     name: '5 semanas de vacaciones',
     description:
       '2 semanas extra de vacaciones para recargar energías.',
@@ -176,7 +163,6 @@ const alternativeResources: Array<Resource> = [
     },
   },
   {
-    href: '/flexible-home-office',
     name: 'Home office flexible',
     description:
       'Flexibilidad para trabajar desde casa (nos encantaría compartir tiempo de oficina inicialmente).',
@@ -187,7 +173,6 @@ const alternativeResources: Array<Resource> = [
     },
   },
   {
-    href: '/office-recreation',
     name: 'Recreación en oficina',
     description:
       'Mesa de ping pong, muro de escalada y canasta de básquet en la oficina.',
@@ -201,7 +186,6 @@ const alternativeResources: Array<Resource> = [
     },
   },
   {
-    href: '/pet-friendly',
     name: 'Oficina pet friendly',
     description:
       'Trae a tus amigos peludos a trabajar contigo.',
@@ -212,7 +196,6 @@ const alternativeResources: Array<Resource> = [
     },
   },
   {
-    href: '/birthday-off',
     name: 'Día libre de cumpleaños',
     description:
       'Tienes tu cumpleaños como día libre para celebrar.',
@@ -226,11 +209,23 @@ const alternativeResources: Array<Resource> = [
     },
   },
   {
-    href: '/office-perks',
-    name: 'Beneficios de oficina',
+    name: 'MacBook incluido',
     description:
-      'Café gratis, fruta fresca y snacks disponibles todos los días.',
-    icon: PackageIcon, // Perfect for perks/benefits package
+      'Te proporcionamos un MacBook para que tengas las mejores herramientas de trabajo.',
+    icon: PackageIcon, // Good for equipment/tech package
+    pattern: {
+      y: 32,
+      squares: [
+        [0, 2],
+        [1, 4],
+      ],
+    },
+  },
+  {
+    name: 'Actividades',
+    description:
+      'Organizamos juegos de mesa con comida incluida, social runs y otras actividades para compartir en equipo.',
+    icon: FaceSmileIcon, // Good for social activities
     pattern: {
       y: 32,
       squares: [
@@ -307,7 +302,6 @@ function Resource({ resource }: { resource: Resource }) {
 
   return (
     <div
-      key={resource.href}
       onMouseMove={onMouseMove}
       className="group relative flex rounded-2xl bg-zinc-50 transition-shadow hover:shadow-md hover:shadow-zinc-900/5 dark:bg-white/2.5 dark:hover:shadow-black/5"
     >
@@ -316,10 +310,7 @@ function Resource({ resource }: { resource: Resource }) {
       <div className="relative rounded-2xl px-4 pt-16 pb-4">
         <ResourceIcon icon={resource.icon} />
         <h3 className="mt-4 text-sm/7 font-semibold text-zinc-900 dark:text-white">
-          <Link href={resource.href}>
-            <span className="absolute inset-0 rounded-2xl" />
-            {resource.name}
-          </Link>
+          {resource.name}
         </h3>
         <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
           {resource.description}
@@ -339,8 +330,8 @@ export function Perks() {
         Beneficios
       </Heading>
       <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 sm:grid-cols-2 xl:grid-cols-4 dark:border-white/5">
-        {currentResources.map((resource) => (
-          <Resource key={resource.href} resource={resource} />
+        {currentResources.map((resource, index) => (
+          <Resource key={resource.name} resource={resource} />
         ))}
       </div>
     </div>
