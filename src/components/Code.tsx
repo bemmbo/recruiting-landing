@@ -77,8 +77,8 @@ function CopyButton({ code }: { code: string }) {
       className={clsx(
         'group/button absolute top-3.5 right-4 overflow-hidden rounded-full py-1 pr-3 pl-2 text-2xs font-medium opacity-0 backdrop-blur-sm transition group-hover:opacity-100 focus:opacity-100',
         copied
-          ? 'bg-[#4A90E2]/10 ring-1 ring-[#4A90E2]/20 ring-inset'
-          : 'bg-[#0E183B]/5 hover:bg-[#0E183B]/10 dark:bg-[#4A90E2]/5 dark:hover:bg-[#4A90E2]/10',
+          ? 'bg-[#304cac]/10 ring-1 ring-[#304cac]/20 ring-inset'
+          : 'bg-[#0E183B]/5 hover:bg-[#0E183B]/10 dark:bg-[#304cac]/5 dark:hover:bg-[#304cac]/10',
       )}
       onClick={() => {
         window.navigator.clipboard.writeText(code).then(() => {
@@ -89,17 +89,17 @@ function CopyButton({ code }: { code: string }) {
       <span
         aria-hidden={copied}
         className={clsx(
-          'pointer-events-none flex items-center gap-0.5 text-[#0E183B] transition duration-300 dark:text-[#4A90E2]',
+          'pointer-events-none flex items-center gap-0.5 text-[#0E183B] transition duration-300 dark:text-[#304cac]',
           copied && '-translate-y-1.5 opacity-0',
         )}
       >
-        <ClipboardIcon className="h-5 w-5 fill-[#0E183B]/20 stroke-[#0E183B] transition-colors group-hover/button:stroke-[#1A2B5C] dark:fill-[#4A90E2]/20 dark:stroke-[#4A90E2] dark:group-hover/button:stroke-[#357ABD]" />
+        <ClipboardIcon className="h-5 w-5 fill-[#0E183B]/20 stroke-[#0E183B] transition-colors group-hover/button:stroke-[#1A2B5C] dark:fill-[#304cac]/20 dark:stroke-[#304cac] dark:group-hover/button:stroke-[#357ABD]" />
         Copy
       </span>
       <span
         aria-hidden={!copied}
         className={clsx(
-          'pointer-events-none absolute inset-0 flex items-center justify-center text-[#4A90E2] transition duration-300',
+          'pointer-events-none absolute inset-0 flex items-center justify-center text-[#304cac] transition duration-300',
           !copied && 'translate-y-1.5 opacity-0',
         )}
       >
@@ -115,17 +115,17 @@ function CodePanelHeader({ tag, label }: { tag?: string; label?: string }) {
   }
 
   return (
-    <div className="flex h-9 items-center gap-2 border-y border-t-transparent border-b-[#0E183B]/10 bg-[#0E183B]/5 px-4 dark:border-b-[#4A90E2]/10 dark:bg-[#4A90E2]/5">
+    <div className="flex h-9 items-center gap-2 border-y border-t-transparent border-b-[#0E183B]/10 bg-[#0E183B]/5 px-4 dark:border-b-[#304cac]/10 dark:bg-[#304cac]/5">
       {tag && (
         <div className="dark flex">
           <Tag variant="small">{tag}</Tag>
         </div>
       )}
       {tag && label && (
-        <span className="h-0.5 w-0.5 rounded-full bg-[#0E183B]/50 dark:bg-[#4A90E2]/50" />
+        <span className="h-0.5 w-0.5 rounded-full bg-[#0E183B]/50 dark:bg-[#304cac]/50" />
       )}
       {label && (
-        <span className="font-mono text-xs text-[#0E183B]/70 dark:text-[#4A90E2]/70">{label}</span>
+        <span className="font-mono text-xs text-[#0E183B]/70 dark:text-[#304cac]/70">{label}</span>
       )}
     </div>
   )
@@ -183,9 +183,9 @@ function CodeGroupHeader({
   }
 
   return (
-    <div className="flex min-h-[calc(--spacing(12)+1px)] flex-wrap items-start gap-x-4 border-b border-[#0E183B]/10 bg-[#0E183B]/5 px-4 dark:border-[#4A90E2]/10 dark:bg-[#4A90E2]/5">
+    <div className="flex min-h-[calc(--spacing(12)+1px)] flex-wrap items-start gap-x-4 border-b border-[#0E183B]/10 bg-[#0E183B]/5 px-4 dark:border-[#304cac]/10 dark:bg-[#304cac]/5">
       {title && (
-        <h3 className="mr-auto pt-3 text-xs font-semibold text-[#0E183B] dark:text-[#4A90E2]">
+        <h3 className="mr-auto pt-3 text-xs font-semibold text-[#0E183B] dark:text-[#304cac]">
           {title}
         </h3>
       )}
@@ -196,8 +196,8 @@ function CodeGroupHeader({
               className={clsx(
                 'border-b py-3 transition data-selected:not-data-focus:outline-hidden',
                 childIndex === selectedIndex
-                  ? 'border-[#4A90E2] text-[#4A90E2]'
-                  : 'border-transparent text-[#0E183B]/70 hover:text-[#0E183B] dark:text-[#4A90E2]/70 dark:hover:text-[#4A90E2]',
+                  ? 'border-[#304cac] text-[#304cac]'
+                  : 'border-transparent text-[#0E183B]/70 hover:text-[#0E183B] dark:text-[#304cac]/70 dark:hover:text-[#304cac]',
               )}
             >
               {getPanelTitle(isValidElement(child) ? child.props : {})}
@@ -319,7 +319,7 @@ export function CodeGroup({
   let hasTabs = Children.count(children) > 1
 
   let containerClassName =
-    'my-6 overflow-hidden rounded-2xl bg-[#0E183B]/5 shadow-md dark:bg-[#4A90E2]/5 dark:ring-1 dark:ring-[#4A90E2]/10'
+    'my-6 overflow-hidden rounded-2xl bg-[#0E183B]/5 shadow-md dark:bg-[#304cac]/5 dark:ring-1 dark:ring-[#304cac]/10'
   let header = (
     <CodeGroupHeader title={title} selectedIndex={tabGroupProps.selectedIndex}>
       {children}

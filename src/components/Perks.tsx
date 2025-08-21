@@ -33,9 +33,9 @@ interface Resource {
 
 const resources: Array<Resource> = [
   {
-    name: 'Opciones de acciones',
+    name: 'Stock options',
     description:
-      'Ofrecemos opciones de acciones a todos nuestros empleados.',
+      'Ofrecemos opciones de acciones a todos los Bukers.',
     icon: UserIcon,
     pattern: {
       y: 16,
@@ -48,7 +48,7 @@ const resources: Array<Resource> = [
   {
     name: 'Seguro de salud',
     description:
-      'Ofrecemos seguro de salud a todos nuestros empleados.',
+      'Ofrecemos seguro de salud a todos los Bukers.',
     icon: ChatBubbleIcon,
     pattern: {
       y: -6,
@@ -61,7 +61,7 @@ const resources: Array<Resource> = [
   {
     name: 'Vacaciones sin límite',
     description:
-      'Ofrecemos vacaciones sin límite a todos nuestros empleados.',
+      'Ofrecemos vacaciones sin límite a todos los Bukers.',
     icon: EnvelopeIcon,
     pattern: {
       y: 32,
@@ -74,7 +74,7 @@ const resources: Array<Resource> = [
   {
     name: 'Trabajo remoto',
     description:
-      'Ofrecemos trabajo remoto a todos nuestros empleados.',
+      'Trabaja desde donde quieras. Al principio, nos gustaría que estés en la oficina para que nos conozcas mejor.',
     icon: UsersIcon,
     pattern: {
       y: 22,
@@ -84,7 +84,7 @@ const resources: Array<Resource> = [
   {
     name: 'Horarios flexibles',
     description:
-      'Ofrecemos horarios flexibles a todos nuestros empleados.',
+      'Trabajamos por objetivos, no por horas',
     icon: UsersIcon,
     pattern: {
       y: 22,
@@ -112,6 +112,16 @@ const resources: Array<Resource> = [
     },
   },
   {
+    name: 'BIT - Buk Institute of Technology',
+    description:
+      'Contamos con nuestro propio bootcamp asincrónico para capacitarte sobre el mundo tecnológico de Buk.',
+    icon: ShapesIcon,
+    pattern: {
+      y: 22,
+      squares: [[0, 1]],
+    },
+  },
+  {
     name: 'Membresía de gimnasio',
     description:
       'Ofrecemos puntos a todos nuestros empleados para usar en el gimnasio de su elección.',
@@ -126,6 +136,26 @@ const resources: Array<Resource> = [
     description:
       'Ofrecemos puntos a todos nuestros empleados para usar en apoyo de salud mental.',
     icon: UsersIcon,
+    pattern: {
+      y: 22,
+      squares: [[0, 1]],
+    },
+  },
+  {
+    name: 'MacBook Pro incluido',
+    description:
+      'Te proporcionamos un MacBook Pro para que tengas las mejores herramientas de trabajo.',
+    icon: ShapesIcon,
+    pattern: {
+      y: 22,
+      squares: [[0, 1]],
+    },
+  },
+  {
+    name: 'Muchos beneficios flexibles',
+    description:
+      'Ofrecemos puntos a todos los Bukers para usar en beneficios flexibles.',
+    icon: TagIcon,
     pattern: {
       y: 22,
       squares: [[0, 1]],
@@ -322,7 +352,7 @@ function Resource({ resource }: { resource: Resource }) {
 
 export function Perks() {
   // Switch between 'resources' (original) and 'alternativeResources' (new)
-  const currentResources = alternativeResources // Change to 'resources' to use original list
+  const currentResources = resources // Change to 'resources' to use original list
   
   return (
     <div className="my-16 xl:max-w-none">

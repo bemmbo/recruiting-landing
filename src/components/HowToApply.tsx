@@ -8,7 +8,7 @@ export function HowToApply() {
       <h1>Cómo postular</h1>
       
       <p className="lead">
-        Esta guía te llevará a través del proceso de postulación en Bemmbo. Cubriremos cómo iniciar tu postulación y qué esperar durante el proceso de entrevistas. Nuestro objetivo es hacer el proceso lo más transparente y directo posible.
+        Esta guía te llevará a través del proceso de postulación en Buk Finanzas. Cubriremos cómo iniciar tu postulación y qué esperar durante el proceso de entrevistas. Nuestro objetivo es hacer el proceso lo más transparente y directo posible.
       </p>
 
       <Note>
@@ -21,7 +21,7 @@ export function HowToApply() {
       <ol>
         <li>Envía tu postulación usando nuestros endpoints de API</li>
         <li>Entrevista corta con fundadores para asegurar alineación</li>
-        <li>Revisión de tarea frontend - simulando una entrega real de feature de Bemmbo</li>
+        <li>Revisión de tarea frontend - simulando una entrega real de feature de Buk Finanzas</li>
         <li>Entrevista técnica con un miembro del equipo (live coding de un problema simple)</li>
         <li>Charla de café en nuestra oficina para fit cultural ☕</li>
       </ol>

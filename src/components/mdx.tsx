@@ -44,8 +44,8 @@ function InfoIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export function Note({ children }: { children: React.ReactNode }) {
   return (
-    <div className="my-6 flex gap-2.5 rounded-2xl border border-[#0E183B]/20 bg-[#0E183B]/5 p-4 text-sm/6 text-[#0E183B] dark:border-[#4A90E2]/30 dark:bg-[#4A90E2]/5 dark:text-[#4A90E2] dark:[--tw-prose-links-hover:var(--color-[#357ABD])] dark:[--tw-prose-links:var(--color-[#4A90E2])]">
-      <InfoIcon className="mt-1 h-4 w-4 flex-none fill-[#0E183B] stroke-white dark:fill-[#4A90E2]/20 dark:stroke-[#4A90E2]" />
+    <div className="my-6 flex gap-2.5 rounded-2xl border border-[#304cac]/20 bg-[#304cac]/5 p-4 text-sm/6 text-[#304cac] dark:border-[#304cac]/30 dark:bg-[#304cac]/5 dark:text-[#304cac] dark:[--tw-prose-links-hover:var(--color-[#357ABD])] dark:[--tw-prose-links:var(--color-[#304cac])]">
+      <InfoIcon className="mt-1 h-4 w-4 flex-none fill-[#304cac] stroke-white dark:fill-[#304cac]/20 dark:stroke-[#304cac]" />
       <div className="[&>:first-child]:mt-0 [&>:last-child]:mb-0">
         {children}
       </div>

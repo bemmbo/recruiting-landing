@@ -20,7 +20,7 @@ const engineering_principles = [
   {
     href: '/clear-paths',
     name: 'Construimos software con caminos claros, no soluciones que delegan decisiones al usuario',
-    description: 'En Bemmbo creemos en diseñar experiencias simples e intuitivas, con una visión clara de cómo deben funcionar y navegar. Nuestro enfoque prioriza la simplicidad y la usabilidad, evitando llenar el producto de configuraciones o menús innecesarios, incluso si eso significa decir no a ciertas solicitudes.',
+    description: 'En Buk Finanzas creemos en diseñar experiencias simples e intuitivas, con una visión clara de cómo deben funcionar y navegar. Nuestro enfoque prioriza la simplicidad y la usabilidad, evitando llenar el producto de configuraciones o menús innecesarios, incluso si eso significa decir no a ciertas solicitudes.',
   },
   {
     href: '/real-needs',
@@ -41,7 +41,7 @@ export function EngineeringPrinciples() {
         Principios de Ingeniería
       </Heading>
       <p className="text-sm text-zinc-600 dark:text-zinc-400">
-        Estos principios son los que guían cómo trabajamos en Bemmbo.
+        Estos principios son los que guían cómo trabajamos en Buk Finanzas.
       </p>
       <div className="not-prose mt-4 border-t border-zinc-900/5 pt-10 dark:border-white/5">
         <ul className="space-y-8">

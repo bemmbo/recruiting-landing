@@ -1,6 +1,6 @@
 import { GridPattern } from '@/components/GridPattern'
 import bembin from '@/images/bemmbin.jpeg'
-import bemboDev from '@/images/bemmbo_dev.svg'
+import bemboDev from '@/images/bemmbo_dev.png'
 import Image from 'next/image'
 
 export function HeroPattern() {
@@ -9,15 +9,15 @@ export function HeroPattern() {
       <div className="absolute top-0 left-1/2 ml-[-38rem] h-100 w-325 dark:mask-[linear-gradient(white,transparent)]">
         <Image
           src={bemboDev}
-          alt="Bemmbo Dev Logo"
-          width={400}
-          height={400}
-          className="absolute top-[-50px] left-7 z-10"
+          alt="Buk Finanzas Dev Logo"
+          width={200}
+          height={200}
+          className="absolute left-20 z-10"
         />
         <div className="absolute inset-0 bg-linear-to-r from-[#172554] to-[#75ACFFCC] mask-[radial-gradient(farthest-side_at_top,white,transparent)] opacity-40 dark:from-[#172554]/30 dark:to-[#75ACFFCC]/30 dark:opacity-100">
           <Image
             src={bembin}
-            alt="Bemmbo background"
+            alt="Buk Finanzas background"
             fill
             className="object-cover mix-blend-overlay opacity-15 -mt-14"
             priority

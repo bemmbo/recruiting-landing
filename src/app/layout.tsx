@@ -9,33 +9,33 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Bemmbo Recruiting',
-    default: 'Bemmbo está buscando Software Engineers',
+    template: '%s - Buk Finanzas Recruiting',
+    default: 'Buk Finanzas está buscando Software Engineers',
   },
   description: 'Automatizando las finanzas de las empresas.',
   metadataBase: new URL('https://looking-for-devs.bemmbo.com'),
   openGraph: {
-    title: 'Bemmbo está buscando Software Engineers',
+    title: 'Buk Finanzas está buscando Software Engineers',
     description: 'Automatizando las finanzas de las empresas.',
     type: 'website',
     url: 'https://looking-for-devs.bemmbo.com',
-    siteName: 'Bemmbo Careers',
+    siteName: 'Buk Finanzas Careers',
     images: [
       {
         url: 'https://looking-for-devs.bemmbo.com/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bemmbo está buscando Software Engineers',
+        alt: 'Buk Finanzas está buscando Software Engineers',
         type: 'image/png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bemmbo está buscando Software Engineers',
+    title: 'Buk Finanzas está buscando Software Engineers',
     description: 'Automatizando las finanzas de las empresas.',
     images: ['https://looking-for-devs.bemmbo.com/og-image.png'],
-    creator: '@bemmbo',
+    creator: '@bukfinanzas',
   },
 }
 

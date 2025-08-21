@@ -16,14 +16,14 @@ function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 const variantStyles = {
   primary:
-    'rounded-full bg-[#0E183B] py-1 px-3 text-white hover:bg-[#1A2B5C] dark:bg-[#4A90E2] dark:text-white dark:ring-1 dark:ring-inset dark:ring-[#4A90E2]/20 dark:hover:bg-[#357ABD] dark:hover:text-white dark:hover:ring-[#4A90E2]',
+    'rounded-full bg-[#304cac] py-1 px-3 text-white hover:bg-[#1A2B5C] dark:bg-[#304cac] dark:text-white dark:ring-1 dark:ring-inset dark:ring-[#304cac]/20 dark:hover:bg-[#357ABD] dark:hover:text-white dark:hover:ring-[#304cac]',
   secondary:
-    'rounded-full bg-[#0E183B]/5 py-1 px-3 text-[#0E183B] hover:bg-[#0E183B]/10 dark:bg-[#4A90E2]/10 dark:text-[#4A90E2] dark:ring-1 dark:ring-inset dark:ring-[#4A90E2]/20 dark:hover:bg-[#4A90E2]/20 dark:hover:text-[#4A90E2]',
+    'rounded-full bg-[#304cac]/5 py-1 px-3 text-[#304cac] hover:bg-[#304cac]/10 dark:bg-[#304cac]/10 dark:text-[#304cac] dark:ring-1 dark:ring-inset dark:ring-[#304cac]/20 dark:hover:bg-[#304cac]/20 dark:hover:text-[#304cac]',
   filled:
-    'rounded-full bg-[#0E183B] py-1 px-3 text-white hover:bg-[#1A2B5C] dark:bg-[#4A90E2] dark:text-white dark:hover:bg-[#357ABD]',
+    'rounded-full bg-[#304cac] py-1 px-3 text-white hover:bg-[#1A2B5C] dark:bg-[#304cac] dark:text-white dark:hover:bg-[#357ABD]',
   outline:
-    'rounded-full py-1 px-3 text-[#0E183B] ring-1 ring-inset ring-[#0E183B]/10 hover:bg-[#0E183B]/5 hover:text-[#0E183B] dark:text-[#4A90E2] dark:ring-[#4A90E2]/20 dark:hover:bg-[#4A90E2]/10 dark:hover:text-[#4A90E2]',
-  text: 'text-[#0E183B] hover:text-[#1A2B5C] dark:text-[#4A90E2] dark:hover:text-[#357ABD]',
+    'rounded-full py-1 px-3 text-[#304cac] ring-1 ring-inset ring-[#304cac]/10 hover:bg-[#304cac]/5 hover:text-[#304cac] dark:text-[#304cac] dark:ring-[#304cac]/20 dark:hover:bg-[#304cac]/10 dark:hover:text-[#304cac]',
+  text: 'text-[#304cac] hover:text-[#1A2B5C] dark:text-[#304cac] dark:hover:text-[#357ABD]',
 }
 
 type ButtonProps = {
